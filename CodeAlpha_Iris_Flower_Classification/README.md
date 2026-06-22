@@ -1,19 +1,24 @@
-# Iris Flower Classification using K-Nearest Neighbors (KNN)
+# Iris Flower Classification using Machine Learning
 
 ## CodeAlpha Data Science Internship Project
 
-## Project Overview
+### Project Overview
 
-This project implements a Machine Learning classification model using the K-Nearest Neighbors (KNN) algorithm to classify Iris flowers into three species: Iris Setosa, Iris Versicolor, and Iris Virginica. The classification is based on four flower measurements: sepal length, sepal width, petal length, and petal width.
+This project focuses on classifying Iris flowers into their respective species using Machine Learning. The classification is performed using the K-Nearest Neighbors (KNN) algorithm based on flower measurements such as sepal length, sepal width, petal length, and petal width.
+
+The project demonstrates the complete machine learning workflow, including data exploration, visualization, preprocessing, model training, prediction, and evaluation.
+
+---
 
 ## Dataset Information
 
-The Iris dataset contains:
+The Iris dataset is one of the most widely used datasets for machine learning classification tasks.
+
+### Dataset Characteristics
 
 * Total Samples: 150
-* Features: 4
-* Classes: 3
-* Samples per Class: 50
+* Number of Features: 4
+* Number of Classes: 3
 * Missing Values: None
 
 ### Features
@@ -29,6 +34,10 @@ The Iris dataset contains:
 * Iris Versicolor
 * Iris Virginica
 
+The dataset is balanced, with 50 samples belonging to each species.
+
+---
+
 ## Technologies Used
 
 * Python
@@ -38,79 +47,87 @@ The Iris dataset contains:
 * Scikit-Learn
 * Jupyter Notebook
 
+---
+
 ## Project Workflow
 
 ### 1. Data Loading
 
-* Loaded the Iris dataset using Scikit-Learn.
-* Created a Pandas DataFrame for analysis.
+The Iris dataset was loaded into a Pandas DataFrame and inspected to understand its structure and contents.
 
-### 2. Exploratory Data Analysis (EDA)
+### 2. Data Exploration
 
-* Examined dataset shape and structure.
-* Generated statistical summaries.
-* Checked for missing values.
-* Analyzed species distribution.
+Basic dataset analysis was performed using:
 
-### 3. Data Visualization
+* Dataset shape
+* Data types
+* Statistical summary
+* Feature inspection
 
-* Species distribution bar chart.
-* Histograms for feature distributions.
-* Scatter plots showing relationships between features.
-* Visual analysis of class separation.
+### 3. Missing Value Analysis
 
-### 4. Feature Selection
+The dataset was checked for missing values to ensure data quality before model development.
 
-* Selected flower measurements as input features.
-* Selected species labels as target values.
+### 4. Exploratory Data Analysis (EDA)
 
-### 5. Train-Test Split
+Several visualizations were created to better understand the dataset:
 
-* Split the dataset into training and testing sets.
-* Used an 80:20 ratio.
-* Applied stratified sampling to maintain class balance.
+* Species Distribution
+* Sepal Length Distribution
+* Petal Length Distribution
+* Petal Length vs Petal Width Relationship
 
-### 6. Feature Scaling
+### 5. Feature Selection
 
-* Applied StandardScaler to normalize feature values.
-* Prepared data for distance-based KNN classification.
+The flower measurements were selected as input features, while the species labels were used as the target variable.
 
-### 7. Model Building
+### 6. Data Splitting
 
-* Implemented the K-Nearest Neighbors (KNN) algorithm.
-* Used K = 3 nearest neighbors.
-* Trained the model using the training dataset.
+The dataset was divided into training and testing sets using an 80:20 ratio.
 
-### 8. Prediction
+### 7. Feature Scaling
 
-* Generated predictions on unseen test data.
-* Compared predicted and actual species labels.
+StandardScaler was applied to standardize feature values before training the KNN model.
 
-### 9. Model Evaluation
+### 8. Model Development
 
-* Calculated model accuracy.
-* Evaluated prediction performance.
-* Analyzed classification results.
+A K-Nearest Neighbors (KNN) classifier was implemented using Scikit-Learn with K = 3 neighbors.
 
-### 10. Custom Predictions
+### 9. Prediction and Evaluation
 
-* Tested the trained model on new flower measurements.
-* Predicted species and confidence scores.
+The trained model was used to predict flower species on unseen test data. Model performance was evaluated using accuracy score.
+
+### 10. Custom Prediction
+
+The model was tested using a custom flower sample to demonstrate real-world classification capability.
+
+---
 
 ## Key Findings
 
-* The Iris dataset is clean and contains no missing values.
-* The dataset is perfectly balanced across all three species.
+* The dataset contains no missing values.
+* All three Iris species are equally represented.
 * Petal measurements provide strong separation between flower species.
-* KNN successfully classified flower species with high accuracy.
-* Iris Setosa is the easiest species to distinguish due to its distinct petal measurements.
+* Feature scaling improves the effectiveness of distance-based algorithms such as KNN.
+* The KNN model achieved high classification accuracy.
+* Machine learning can successfully classify flower species using simple flower measurements.
+
+---
+
+## Results
+
+The K-Nearest Neighbors classifier successfully classified Iris flower species with high accuracy. The model demonstrated strong predictive performance on unseen test data and correctly identified custom flower samples.
+
+---
 
 ## Conclusion
 
-The K-Nearest Neighbors algorithm proved effective for Iris flower classification. Through data exploration, visualization, preprocessing, and model evaluation, the project demonstrates a complete machine learning workflow. The model achieved strong classification performance and successfully predicted flower species based on their physical characteristics.
+This project successfully implemented a machine learning classification system using the K-Nearest Neighbors algorithm. Through data exploration, visualization, preprocessing, model training, and evaluation, the project demonstrated how machine learning techniques can be applied to classify biological data. The results highlight the effectiveness of KNN for solving classification problems and provide practical experience with the complete machine learning workflow.
+
+---
 
 ## Author
 
-Areeba Kagzi
+**Areeba Kagzi**
 
 CodeAlpha Data Science Internship
